@@ -320,6 +320,12 @@ footer {
     }
 }
 
+/* ----------------- POLICIES SEITEN ----------------- */
+.policies {
+    width: 600px;
+    margin: 50px auto;
+    text-align: left;
+}
 
 
 
