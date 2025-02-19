@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 248, 231);
+    font-family: sans-serif;
+    color: rgb(11, 71, 38);
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* ----- Header  ----- */
+#headerContainer {
+    background-color: rgb(0, 94, 45);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 30px 0 30px 0;
+    box-shadow: 0 7px 10px darkgrey;
+
+    #logoContainer{
+        margin-right: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 250px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    nav {
+        background-color: white;
+        width: 500px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+
+            li {
+                list-style: none;
+                padding: 10px 20px 10px 20px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(11, 71, 38);
+                }
+            }
+        }
+    }
+}
+
+/* ----- Footer  ----- */
+footer {
+    background-color: rgb(0, 94, 45);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 0 20px;
+
+    svg {
+        width: 40px;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    #footerAdresse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 0 0 25px;
+
+        p {
+            padding-left: 10px;
+        }
+    }
+
+    #footerContact {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-left: -7rem;
+
+        .footerLinks {
+            padding: 20px;
+
+            svg {
+                margin-bottom: -15px;
+            }
+        }
+    }
+
+    #policies {
+        display: flex;
+        flex-direction: column;
+
+        a{
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+
+/* ----------------- HOMEPAGE ----------------- */
+/* ----- Services Section ----- */
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 0;
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    #events, #catering, #partyservice {
+        background-color: rgba(167, 196, 160, 0.25);
+        border-radius: 2rem;
+        overflow: hidden;
+        width: 900px;
+        margin: 20px 0 20px 0;
+        display: flex;
+        text-align: justify;
+
+        #eventsContainer, #cateringContainer, #partyContainer {
+            width: 600px;
+            padding: 10px 30px 10px 30px;
+        }
+    }
+}
+
+/* ----- Nächstes Event Section ----- */
+#nextEventContainer {
+    background-color: rgb(167, 196, 160);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+
+
+    img {
+        width: 300px;
+        border: 4px solid rgb(11, 71, 38);
+        border-radius: 1rem;
+        margin: 0 20px 30px 20px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        color: rgb(11, 71, 38);
+        background-color: rgb(255, 248, 231);
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 3px 10px rgb(0, 0, 0 , 0.3);
+        font-size: 1rem;
+    }
+}
+
+/* ----- Kontakt Banner  ----- */
+#contactBanner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+
+    button {
+        background-color: rgb(11, 71, 38);
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        margin: 10px;
+    }
+}
+
+
+/* ----------------- KONTAKTFORMULAR SEITE ----------------- */
+#description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 50px 0;
+}
+
+/* Grid-Layout für das Formular */
+.kontakt-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    row-gap: 20px;
+    column-gap: 50px;
+    background: rgba(167, 196, 160, 0.3);
+    padding: 30px 50px;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgb(0, 0, 0 , 0.3);
+    width: 600px;
+}
+
+/* Labels über den Feldern */
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding-bottom: 5px;
+    }
+}
+
+/* Volle Breite für bestimmte Felder */
+.full-width {
+    grid-column: 1 / span 2;
+}
+
+/* Eingabefelder */
+.kontakt-form input,
+.kontakt-form select,
+.kontakt-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.kontakt-form input:focus,
+.kontakt-form select:focus,
+.kontakt-form textarea:focus {
+    outline: 1px solid rgb(0, 94, 45); /* Grüne Umrandung */
+}
+
+/* Nachrichtenfeld */
+.kontakt-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Absenden-Button */
+#submit {
+    width: 150px;
+    height: 50px;
+    color: rgb(11, 71, 38);
+    background-color: rgb(255, 248, 231);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0, 0, 0 , 0.3);
+    font-size: 1rem;
+    grid-column: 1 / span 2; /* Button über die ganze Breite des Formulars */
+    justify-self: center;
+}
+
+/* ----------------- ÜBER UNS SEITE ----------------- */
+#aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#aboutText {
+    max-width: 600px;
+    background: rgba(167, 196, 160, 0.3);
+    padding: 10px 30px;
+    border-radius: 1rem;
+
+
+    img {
+        width: 300px;
+        border: 3px solid rgb(0, 94, 45);
+        border-radius: 1rem;
+        margin: 10px 0 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
