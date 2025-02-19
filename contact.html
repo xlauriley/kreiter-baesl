@@ -39,19 +39,19 @@
         <form class="kontakt-form" action="https://formsubmit.co/kreiter.baesl@web.de" method="POST">
             <div class="form-group">
                 <label for="vorname">Vorname</label>
-                <input type="text" id="vorname" required>
+                <input type="text" id="vorname" name="vorname" required>
             </div>
             <div class="form-group">
                 <label for="nachname">Nachname</label>
-                <input type="text" id="nachname" required>
+                <input type="text" id="nachname" name="nachname" required>
             </div>
             <div class="form-group">
                 <label for="email">E-Mail</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="anfrage">Art der Anfrage</label>
-                <select id="anfrage">
+                <select id="anfrage" name="anfrage">
                     <option value="">Wähle aus</option>
                     <option value="catering">Catering</option>
                     <option value="partyservice">Partyservice</option>
@@ -60,13 +60,13 @@
             </div>
             <div class="form-group full-width">
                 <label for="betreff">Betreff</label>
-                <input type="text" id="betreff">
+                <input type="text" id="betreff" name="betreff">
             </div>
             <div class="form-group full-width">
                 <label for="nachricht">Ihre Nachricht</label>
-                <textarea id="nachricht"></textarea>
+                <textarea id="nachricht" name="nachricht"></textarea>
             </div>
-            <input type="submit" id="submit" value="Absenden">
+            <input type="submit" id="submit" value="Absenden" name="submit">
         </form>
     </div>
 
