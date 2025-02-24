@@ -319,14 +319,14 @@ footer {
     height: 400px;
 
     button {
-        margin-top: 60px;
+        margin-top: 50px;
     }
-}
 
-a {
-    color: rgb(11, 71, 38);
+    #instalink {
+        color: rgb(11, 71, 38);
+        font-weight: bold;
+     }
 }
-
 
 
 /* ----------------- ÜBER UNS SEITE ----------------- */
