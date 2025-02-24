@@ -20,7 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contact.html" class="active">Kontakt</a></li>
                     <li><a href="about.html">Über Uns</a></li>
-                    <li><a href="gallery.html">Fotogalerie</a></li>
+                    <!--<li><a href="gallery.html">Fotogalerie</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -39,34 +39,40 @@
         <form class="kontakt-form" action="https://formsubmit.co/35504569f60e69920d24b638ff19c6f1" method="POST">
             <div class="form-group">
                 <label for="vorname">Vorname</label>
-                <input type="text" id="vorname" name="vorname" required>
+                <input type="text" id="vorname" name="Vorname" required>
             </div>
             <div class="form-group">
                 <label for="nachname">Nachname</label>
-                <input type="text" id="nachname" name="nachname" required>
+                <input type="text" id="nachname" name="Nachname" required>
             </div>
             <div class="form-group">
                 <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div>
+                <label for="telefon">Telefonnummer</label>
+                <input type="tel" id="telefon" name="Telefon">
+            </div>
+            <div class="form-group">
+                <label for="betreff">Betreff</label>
+                <input type="text" id="betreff" name="Betreff">
             </div>
             <div class="form-group">
                 <label for="anfrage">Art der Anfrage</label>
-                <select id="anfrage" name="anfrage">
+                <select id="anfrage" name="Anfrage">
                     <option value="wähleAus">Wähle aus</option>
                     <option value="catering">Catering</option>
                     <option value="partyservice">Partyservice</option>
                     <option value="eventreservierung">Eventreservierung</option>
+                    <option value="sonstiges">Sonstiges</option>
                 </select>
-            </div>
-            <div class="form-group full-width">
-                <label for="betreff">Betreff</label>
-                <input type="text" id="betreff" name="betreff">
             </div>
             <div class="form-group full-width">
                 <label for="nachricht">Ihre Nachricht</label>
                 <textarea id="nachricht" name="nachricht" required></textarea>
             </div>
             <button type="submit" id="submit" class="button-light">Absenden</button>
+            <input type="hidden" name="_next" value="https://xlauriley.github.io/kreiter-baesl/thanks.html">
         </form>
     </div>
 
@@ -97,10 +103,12 @@
             <p>0172/8152039</p>
         </div>
         <div class="footerLinks">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-            </svg>
-            <p>@zum_kreiter_baesl</p>
+            <a href="https://www.instagram.com/zum_kreiter_baesl/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                </svg>
+                <p>@zum_kreiter_baesl</p>
+            </a>
         </div>
     </div>
 

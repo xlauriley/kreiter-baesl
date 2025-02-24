@@ -16,6 +16,11 @@ body {
     p {
         font-size: 16px;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 /* ----- Styles für die Buttons ----- */
