@@ -23,6 +23,13 @@ a {
     color: white;
 }
 
+@font-face {
+    font-family: 'Julee';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Assets/font/Julee/Julee-Regular.ttf') format('truetype');
+}
+
 /* ----- Styles für die Buttons ----- */
 button {
     width: 150px;
@@ -86,9 +93,10 @@ button {
             width: 250px;
         }
 
-        h1 {
+        #logoSubline {
             color: white;
-            font-size: 25px;
+            font-size: 35px;
+            font-family: 'Julee', cursive;
         }
     }
 
@@ -170,11 +178,12 @@ footer {
     #policies {
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         a{
             text-decoration: none;
             color: white;
-            padding: 20px;
+            padding: 0 0 20px 0;
             text-align: center;
         }
     }
@@ -361,6 +370,73 @@ footer {
     text-align: left;
 }
 
+
+@media screen and (max-width: 768px) {
+    body {
+    }
+
+    /* --- HOMEPAGE SMARTPHONE ANSICHT --- */
+    #services {
+        #events, #partyservice {
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 500px !important;
+            text-align: center !important;
+        }
+
+        #catering {
+            flex-direction: column-reverse !important;
+            align-items: center !important;
+            width: 500px !important;
+            text-align: center !important;
+        }
+
+        #eventsContainer, #cateringContainer, #partyContainer {
+            padding: 15px !important;
+            width: 450px !important;
+        }
+
+        img {
+            width: 200px !important;
+            height: 150px !important;
+            padding-top: 20px !important;
+            border-radius: 1rem !important;
+        }
+
+        h1 {
+            width: 400px !important;
+            word-wrap: break-word !important;
+            text-align: center !important;
+        }
+    }
+
+    #nextEventContainer {
+        h1 {
+            width: 450px !important;
+            word-wrap: break-word !important;
+            text-align: center !important;
+        }
+    }
+
+    #contactContainer {
+        width: 450px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* --- FOOTER SMARTPHONE ANSICHT --- */
+    footer, #footerContact {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 !important;
+
+        .footerLinks {
+            padding: 10px !important;
+        }
+    }
+
+}
 
 
 
