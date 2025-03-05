@@ -473,11 +473,7 @@ footer {
 
 }
 
-
-
-
-
-
+/* ----- Styling für die Zoom Funktion ------ */
 /* Lightbox Styling */
 #lightbox {
     display: flex;
@@ -504,6 +500,10 @@ footer {
 #lightbox.visible {
     visibility: visible;
     opacity: 1;
+}
+
+.hidden {
+    display: none; /* Versteckt das Element */
 }
 
 #close {
