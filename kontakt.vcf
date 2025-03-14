@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Platz;Gabriel;;;
+FN:Vorname Nachname
+ORG:Zum Kreiter Bäs'l
+TITLE:Geschäftsführer
+TEL;TYPE=mobile:+491728152039
+EMAIL:info@kreiter-baesl.de
+URL:https://www.kreiter-baesl.de/
+ADR;TYPE=work:;;Breite Straße 53;Ludwigshafen;67067;Deutschland
+END:VCARD
