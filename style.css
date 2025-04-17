@@ -227,7 +227,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 680px;
+    height: auto;
+    padding-bottom: 20px;
 
 
     img {
@@ -421,10 +422,6 @@ footer {
             width: 300px !important;
             word-wrap: break-word !important;
             text-align: center !important;
-        }
-
-        img {
-            width: 300px !important;
         }
     }
 
